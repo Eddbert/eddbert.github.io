@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAYJQ5Hdg6f68-A7Bd86Rl37rMtN0-BghQ",
+    authDomain: "my-first-task-d3707.firebaseapp.com",
+    databaseURL: "https://my-first-task-d3707.firebaseio.com",
+    projectId: "my-first-task-d3707",
+    storageBucket: "",
+    messagingSenderId: "34615108278"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+$('#showanswer').click(function(){   
+     $('.Question, p').show();
+     $('#showanswer').hide();
+     
+     $('#hideanswer').show();         
+  });
+  
+  $('#hideanswer').click(function(){
+   
+     $('.Question	, p',).hide();
+     $('#showanswer').show();
+     $('#hideanswer').hide();         
+  });  
+  }); 
+  </script>
+  
+  <style>
+  .Question p{  
+    background: #F39814; color: white;
+    margin: 3px;
+    padding: 0.4em;    
+  }  
+  </style>  
+</head>
+<body>
+<h1>Eduardo Argott</h1>
+<h3>Personal</h3>
+<input type="button" value="Show Answers" id="showanswer" />
+<input type="button" value="Hide Answers" id="hideanswer"style="display:none;position:static"/>
+<br>
+<br>
+<strong>Web related tools that you like</strong>
+<br/>
+<br/>
+<div id="dialog" title="Basic dialog" class="Question" >
+<p style="display:none" class="answer" >I don't know of many and have mainly used Google Dev tools and Dreamweaver</p>
+</div>
+<strong>Web related tools that you don't like</strong>
+<br/>
+<br/>
+<div id="dialog" title="Basic dialog" class="Question" >
+<p style="display:none" class="answer" >Not yet</p>
+</div>
+<strong>Project that you are proud.</strong>
+<br/>
+<br/>
+<div id="dialog" title="Basic dialog" class="Question" >
+<p style="display:none" class="answer" >A fully functional OS running on a basic 8bit microcontroller</p>
+</div>
+<strong>What do you want to learn in this class?</strong>
+<br/>
+<br/>
+<div id="dialog" title="Basic dialog" class="Question" >
+<p style="display:none" class="answer" >I want to learn more about html5 and css web development</p>
+</div>
+<strong>Review the topics. What topics are you familiar with?</strong>
+<br/>
+<br/>
+<div id="dialog" title="Basic dialog" class="Question" >
+<p style="display:none" class="answer" >I'm a little familiar with both html5 and javascript</p>
+</div>
+<br>
+<h3>Project</h3>
+<strong>Introduction</strong>
+<p>One Idea we had was a contractor scheduler and contactor</p>
+<strong>Description</strong>
+<p>Bascially at the site there would be two kind of users: Contractors and clients<br>
+Contractors would sign up and list their services and fees<br>
+clients would look for contractors in their area<br>
+the service would help with the scheduling of services and payment of fees</p>
+</body>
+</html>
